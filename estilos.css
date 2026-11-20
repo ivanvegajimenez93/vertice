@@ -1,0 +1,525 @@
+@import url('https://googleapis.com');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+header .superior {
+
+  height: auto;
+  display: flex;
+  background-color: #151B2B;
+  padding-left: 200px;
+  justify-content: space-between;
+
+
+}
+
+header .superior .izquierda {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .superior .izquierda .logo {
+
+  display: flex;
+  gap: 15px;
+}
+
+header .superior .izquierda .logo img {
+
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+}
+
+header .superior .izquierda .logo h1 {
+  color: white;
+}
+
+header .superior .izquierda .descripcion p+p::before {
+
+  content: "·";
+  margin-right: 8px;
+  color: #FF6B35;
+  font-size: 20px;
+  vertical-align: middle;
+
+}
+
+header .superior .izquierda .descripcion {
+  display: flex;
+  color: white;
+  height: auto;
+  gap: 8px;
+}
+
+header .superior .derecha {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 200px;
+}
+
+header .superior .derecha .menu {
+
+  display: flex;
+  gap: 30px;
+}
+
+header .derecha .menu .underline a {
+  text-decoration: none;
+  color: white;
+}
+
+header .superior .derecha .menu .underline a:hover {
+  color: #FF6B35;
+  border-bottom: 1px solid #FF6B35;
+  padding-bottom: 20px;
+}
+
+header .banner {
+  background-image: url(img/banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  padding-left: 200px;
+}
+
+header .banner .movimiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20px;
+  padding-bottom: 20px;
+}
+
+header .banner .movimiento h2 span {
+  color: #FF6B35;
+  font-style: italic;
+
+}
+
+header .banner h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+header .banner p {
+  width: 400px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+header .banner button {
+  color: white;
+  background-color: #FF6B35;
+  border-radius: 60px;
+  border: none;
+  width: 160px;
+  text-align: center;
+  padding: 20px;
+}
+
+header .banner button:hover {
+  transition: cubic-bezier(0.4, 0, 0.2, 1)0.8s;
+  background-color: white;
+  color: #FF6B35;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #151B2B;
+  color: white;
+}
+
+main .cont {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #151B2B;
+}
+
+main .cont .superior {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+main .cont .superior .seleccion {
+  padding-right: 200px;
+}
+
+main .cont .superior .seleccion select {
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #FF6B35;
+  background-color: #151B2B;
+  color: white;
+  padding: 10px;
+  appearance: none;
+}
+
+main .cont .superior .rotulo {
+
+  border-left: 10px solid #FF6B35;
+
+}
+
+main .cont .superior .rotulo h3 {
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main .cont .carrusel {
+  display: flex;
+  gap: 40px;
+}
+
+main .cont .carrusel .evento {
+
+  height: 380px;
+  min-width: 0;
+  flex: 1;
+  background-color: #3b3f4c;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+main .cont .carrusel .evento .imagen {
+  object-fit: cover;
+
+
+}
+
+main .cont .carrusel .evento .imagen img {
+  width: 100%;
+  height: auto;
+}
+
+main .cont .carrusel .evento .descripcionEvento button {
+
+  border-radius: 50px;
+  padding: 15px;
+  border: none;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+main .cont .carrusel .evento .descripcionEvento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+main .cont .carrusel .evento .descripcionEvento p {
+  margin: 0;
+}
+
+main .cont .carrusel .evento .descripcionEvento .rotulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main .cont .carrusel .evento .descripcionEvento .naranja {
+  background-color: #FF6B35;
+}
+
+main .cont .carrusel .evento .descripcionEvento .celeste {
+  background-color: rgb(2, 171, 201)
+}
+
+main .cont .carrusel .evento .descripcionEvento .amarillo {
+  background-color: yellow;
+}
+
+main .cont .carrusel .evento .descripcionEvento .morado {
+  background-color: purple;
+}
+
+main .cont .carrusel .evento .descripcionEvento .verde {
+  background-color: greenyellow;
+}
+
+main .contAgenda {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b3f4c;
+
+}
+
+
+main .contAgenda .agendaizquierda {
+  display: flex;
+  flex-direction: column;
+  flex: 65%;
+}
+
+main .contAgenda .agendaizquierda .superior .rotulo {
+
+  border-left: 10px solid #FF6B35;
+}
+
+main .contAgenda .agendaizquierda .superior .rotulo h3 {
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main .contAgenda .agendaizquierda .tabla {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.tabla-ampliada {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  backdrop-filter: blur(5px);
+  z-index: 1001;
+
+}
+
+.fondo-desenfocado {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+
+
+main .contAgenda .agendaizquierda .tabla table {
+  background-color: white;
+  color: #151B2B;
+  border-color: #151B2B;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  overflow: hidden;
+  border-spacing: 0;
+  width: 90%;
+}
+
+
+main .contAgenda .agendaizquierda .tabla table th,
+main .contAgenda .agendaizquierda .tabla table td {
+  text-align: left;
+  padding: 15px;
+  border-color: #151B2B;
+  border-style: solid;
+  border-width: 1px;
+}
+
+main .contAgenda .agendaizquierda .tabla table thead {
+  background-color: #151B2B;
+  color: white;
+  border-radius: 20px;
+
+}
+
+main .contAgenda .agendaderecha {
+  display: flex;
+  flex-direction: column;
+}
+
+main .contAgenda .agendaderecha {
+  display: flex;
+  flex-direction: column;
+  flex: 35%;
+}
+
+main .contAgenda .agendaderecha .superior .rotulo {
+  justify-content: flex-start;
+  border-left: 10px solid #FF6B35;
+}
+
+main .contAgenda .agendaderecha .superior .rotulo h3 {
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main .contAgenda .agendaderecha .grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  padding-top: 20px;
+}
+
+main .contAgenda .agendaderecha .grilla .actividad {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px #FF6B35 solid;
+  padding: 10px;
+}
+
+main .contAgenda .agendaderecha .grilla .actividad .textoAct {
+  display: flex;
+  justify-content: center;
+
+}
+
+main .contAgenda .agendaderecha .grilla .actividad .icono {
+  padding-right: 20px;
+}
+
+
+main .contAgenda .agendaderecha .grilla .actividad .icono img {
+  width: 30px;
+}
+
+
+footer {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #151B2B;
+  padding: 15px 200px;
+  box-sizing: border-box;
+  color: white;
+  gap: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+footer .izquierda {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .izquierda .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  border-right: 1px solid white;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+footer .izquierda .logo .imagen {
+  display: flex;
+  align-items: center;
+}
+
+footer .izquierda .logo .imagen img {
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+}
+
+footer .izquierda .logo .textoLogo p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+footer .izquierda .redes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .izquierda .redes .textoRedes {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+footer .izquierda .redes .textoRedes p {
+  margin: 0;
+}
+
+footer .izquierda .redes .logosRedes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .izquierda .redes .logosRedes img {
+  width: 20px;
+}
+
+
+footer .derecha {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 0;
+}
+
+footer .derecha .politicas {
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+  border-right: 1px solid white;
+  gap: 30px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+footer .derecha .politicas p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+footer .derecha .derechos {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+footer .derecha .derechos p {
+  margin: 0;
+  white-space: nowrap;
+}
