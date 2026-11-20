@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
 * {
@@ -800,4 +800,18 @@ footer .derecha .derechos p {
     transform: translate(-50%, -50%) scale(1);
     z-index: 1001;
   }
+}
+/* Ajustes de consistencia visual */
+main .cont .superior .rotulo h3,
+main .cont .carrusel .evento .descripcionEvento p {
+  color: #fff;
+}
+main .cont .carrusel .evento .descripcionEvento {
+  height: auto;
+  min-height: 110px;
+  justify-content: flex-start;
+  padding-top: 16px;
+}
+main .cont .carrusel .evento .imagen img {
+  display: block;
 }

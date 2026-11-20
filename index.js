@@ -93,8 +93,7 @@ tabla.addEventListener("mouseleave", () => {
 
 
 tabla.addEventListener("click", () => {
-
-
+    if (tabla.classList.contains("tabla-ampliada")) return;
     fondo.classList.add("fondo-desenfocado");
     document.body.appendChild(fondo);
     tabla.classList.add("tabla-ampliada");
